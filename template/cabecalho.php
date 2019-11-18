@@ -1,8 +1,8 @@
 <?php 
-    session_start();
+    /*session_start();
     if(empty($_SESSION['nome'])){
         header('location: ../index.php');
-    }
+    }*/
 
 ?>
 <!DOCTYPE html>
@@ -30,20 +30,20 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="../telas/musicas.php">Musicas</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Categorias</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../telas/categoria.php?id<?php //id da categoria, mostrar apenas os cursos da categoria ?>">Categoria</a>
+                </div>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../telas/albuns.php">Álbuns</a>
+                <a class="nav-link" href="../telas/cursos.php">Todos os cursos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../telas/artistas.php">Artistas</a>
+                <a class="nav-link" href="../telas/instituicoes.php">Instituições</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../telas/playlists.php">Playlists</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="../telas/genero.php">Gênero</a>
+                <a class="nav-link" href="../telas/meus_cursos.php">Meus cursos</a>
             </li>
         </ul>
 
@@ -51,13 +51,13 @@
             <div class="col">
                 <div class="text-right">
                     <p style="color: silver; margin: 0;">Seja bem 
-                    <?php 
+                    <?php /*
                     if($_SESSION['sexo']=='masculino'){
                         echo " vindo ";
                     }elseif($_SESSION['sexo']=='feminino'){
                         echo " vinda ";
                     }
-                    echo $_SESSION['nome'];
+                    echo $_SESSION['nome'];*/
                     ?>
                     </p>
                 </div>

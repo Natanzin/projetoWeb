@@ -16,17 +16,22 @@ if(!empty($_GET['acao']) && $_GET['acao']=='deslogar'){
     <script src="bootstrap/jquery-3.3.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
+    <style>
+        body{
+            background: whitesmoke;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container">
         <div class="row">
             <div class="col" align="left">
-                <a class="btn btn-outline-primary btn-sm" href="">Entrar como instituição</a>
+                <a class="btn btn-outline-primary btn-sm" href="login/cadastro_escola.php">Entrar como instituição</a>
                 <h1>Plataforma de cursos</h1>
             </div>
             <div class="col text-center" align="right">
-                <div class="card" style="width: 20rem; margin:0 auto; border: none;">
+                <div class="card" style="background: none; width: 20rem; margin:0 auto; border: none;">
                     <div class="card-body">
                         <h6 class="card-title">ENTRAR</h6>
                         <div class="form-group">
@@ -40,10 +45,10 @@ if(!empty($_GET['acao']) && $_GET['acao']=='deslogar'){
                 </div>
             </div>
         </div>
-        <div class="card">
+        <div class="card" style="background: none;">
             <div class="card-body text-center">
                 <div class="row">
-                    <div class="col text-center" align="left" style="width: 50%; margin: 0 auto;">
+                    <div class="col text-center" align="left" style="background: none; width: 50%; margin: 0 auto;">
                         <h3>A melhor plataforma de curso da America Latina!</h3> 
                         <p> 
                             Aproveite dos melhores cursos desenvolvidos por profissionais altamente qualificados para melhor atender a necessidade
@@ -55,7 +60,7 @@ if(!empty($_GET['acao']) && $_GET['acao']=='deslogar'){
                     </div>
                     <div class="col text-center" align="right" style="width: 50%;">
                         <h5>Você é aluno?</h5>
-                        <div class="card text-center" style="width: 22rem; margin: 0 auto;">
+                        <div class="card text-center" style="background: none; width: 22rem; margin: 0 auto;">
                             <div class="card-body">
                                 <h6 class="card-title">CADASTRE-SE</h6>
                                 <form action="login/cadastrar_aluno.php" method="POST">
